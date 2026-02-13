@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEKNOSEM – Instrumentos de medición e inspección</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <a href="tel:+525512345678" class="top-link">
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +52 (55) 1234-5678
+        </a>
+        <a href="mailto:ventas@instrumentos.com" class="top-link">
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          ventas@instrumentos.com
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-schedule">Horario: Lunes a Viernes 9:00-18:00</span>
+        <a href="#ayuda" class="top-link" aria-label="Ayuda">
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </a>
+        <a href="#registro" class="btn-top btn-outline">Registrarse con correo electrónico</a>
+        <a href="#google" class="btn-top btn-outline">Continuar con Google</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navegación principal -->
+  <nav class="main-nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">TEKNOSEM</a>
+      <div class="search-wrap">
+        <input type="search" class="search-input" placeholder="Buscar instrumento, marca o modelo..." aria-label="Buscar">
+        <button type="button" class="search-btn" aria-label="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <a href="#cotizacion" class="btn-cotizacion">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Mi Cotización
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-title">Precisión absoluta<br><span class="hero-title-light">para tu industria</span></h1>
+          <p class="hero-desc">Soluciones integrales en medición, inspección y control de calidad. Tecnología de vanguardia para resultados confiables.</p>
+          <a href="#catalogo" class="btn btn-primary">Ver Catálogo Completo <span class="arrow">→</span></a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-product-box">
+            <div class="hero-product-icon"></div>
+            <p class="hero-product-name">INSTRUMENTO 3000</p>
+            <p class="hero-product-model">Modelo: XJ-200</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="section categories" id="categorias">
+      <div class="container">
+        <h2 class="section-title">Explora nuestras categorías</h2>
+        <div class="categories-grid">
+          <a href="#categoria-medicion" class="card-category">
+            <span class="card-category-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="4"/></svg>
+            </span>
+            <span class="card-category-name">Instrumentos de Medición</span>
+            <span class="card-category-count">120+ Productos</span>
+          </a>
+          <a href="#categoria-inspeccion" class="card-category">
+            <span class="card-category-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            </span>
+            <span class="card-category-name">Inspección Visual</span>
+            <span class="card-category-count">85+ Productos</span>
+          </a>
+          <a href="#categoria-electricas" class="card-category">
+            <span class="card-category-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <span class="card-category-name">Eléctricas</span>
+            <span class="card-category-count">90+ Productos</span>
+          </a>
+          <a href="#categoria-soldadura" class="card-category">
+            <span class="card-category-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="4"/></svg>
+            </span>
+            <span class="card-category-name">Soldadura</span>
+            <span class="card-category-count">45+ Productos</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA WhatsApp -->
+    <section class="section cta-whatsapp">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="cta-title">¿Tienes dudas técnicas sobre tu proyecto?</h2>
+          <p class="cta-desc">Nuestro equipo está listo para asesorarte sin compromiso.</p>
+        </div>
+        <a href="https://wa.me/56966661272" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Contactar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="section products" id="catalogo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-desc">Soluciones más solicitadas por la industria</p>
+          </div>
+          <a href="#todo" class="link-ver-todo">Ver todo</a>
+        </div>
+        <div class="products-grid">
+          <article class="card-product">
+            <div class="card-product-img">IMG PRODUCTO</div>
+            <p class="card-product-sku">SKU: CD-67-158</p>
+            <h3 class="card-product-name">Calibrador Digital IP67</h3>
+            <p class="card-product-desc">Resistente al agua y polvo. Rango 0-150mm.</p>
+            <a href="#cotizar" class="btn btn-outline-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Cotizar
+            </a>
+          </article>
+          <article class="card-product">
+            <div class="card-product-img">IMG PRODUCTO</div>
+            <p class="card-product-sku">SKU: ME-25-001</p>
+            <h3 class="card-product-name">Micrómetro de Exteriores</h3>
+            <p class="card-product-desc">Precisión 0.001mm. Puntas de carburo.</p>
+            <a href="#cotizar" class="btn btn-outline-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Cotizar
+            </a>
+          </article>
+          <article class="card-product">
+            <div class="card-product-img">IMG PRODUCTO</div>
+            <p class="card-product-sku">SKU: TRMS-87V</p>
+            <h3 class="card-product-name">Multímetro Industrial</h3>
+            <p class="card-product-desc">True RMS. Categoría CAT IV 600V.</p>
+            <a href="#cotizar" class="btn btn-outline-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Cotizar
+            </a>
+          </article>
+          <article class="card-product">
+            <div class="card-product-img">IMG PRODUCTO</div>
+            <p class="card-product-sku">SKU: RL-H5A</p>
+            <h3 class="card-product-name">Nivel Láser Rotativo</h3>
+            <p class="card-product-desc">Autonivelante. Alcance 800m.</p>
+            <a href="#cotizar" class="btn btn-outline-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              Cotizar
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contáctanos -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-desc">Déjanos tus datos y un asesor se pondrá en contacto contigo a la brevedad.</p>
+        <div class="contact-grid">
+          <form class="contact-form" action="#" method="post" id="form-contacto">
+            <input type="text" name="nombre" placeholder="Ej. Juan Pérez" required aria-label="Nombre completo">
+            <input type="email" name="email" placeholder="juan@empresa.com" required aria-label="Correo electrónico">
+            <select name="asunto" aria-label="Asunto">
+              <option value="Cotización General">Cotización General</option>
+              <option value="Soporte técnico">Soporte técnico</option>
+              <option value="Pedido">Pedido</option>
+              <option value="Otro">Otro</option>
+            </select>
+            <textarea name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" aria-label="Mensaje"></textarea>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+          </form>
+          <div class="contact-info">
+            <div class="map-wrap">
+              <!-- Reemplaza el src por el código «Incorporar mapa» que te da Google Maps para tu dirección -->
+<iframe src="https://www.google.com/maps?q=Av+Industria+500+Parque+Industrial+Norte+CDMX&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Mapa de ubicación"></iframe>
+            </div>
+            <div class="contact-details">
+              <p>
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Av. Industria 500, Parque Industrial Norte, CP 12345, CDMX
+              </p>
+              <p>
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                +52 (55) 1234-5678
+              </p>
+              <p>
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                ventas@instrumentos.com
+              </p>
+              <p>
+                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Lun-Vie: 9:00 - 18:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="footer-logo">TEKNOSEM</span>
+            <p>Soluciones integrales en medición, inspección y control de calidad. Tecnología de vanguardia para resultados confiables.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Producto</h4>
+            <ul>
+              <li><a href="#catalogo">Catálogo</a></li>
+              <li><a href="#categorias">Categorías</a></li>
+              <li><a href="#cotizacion">Cotización</a></li>
+              <li><a href="#soporte">Soporte</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-connect">
+            <h4>Conectar</h4>
+            <div class="footer-social">
+              <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+              <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 TEKNOSEM. Todos los derechos reservados.</p>
+          <div class="footer-legal">
+            <a href="#cookies">Gestionar las cookies o rechazarlas</a>
+            <a href="#privacidad">Política de privacidad</a>
+            <a href="#terminos">Términos de uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/56966661272" class="fab-whatsapp" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
