@@ -203,6 +203,7 @@ img {
   font-size: 0.9rem;
   border-radius: var(--radius);
   transition: background .2s, transform .15s;
+  margin-left: auto;
 }
 
 .btn-cotizacion:hover {
@@ -217,6 +218,9 @@ img {
   }
   .search-wrap {
     max-width: none;
+  }
+  .btn-cotizacion {
+    align-self: flex-end;
   }
 }
 
