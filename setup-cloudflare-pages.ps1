@@ -18,11 +18,22 @@ $headers = @{
     "Content-Type"  = "application/json"
 }
 
-# 1. Obtener account ID (o usar ACCOUNT_ID en .env: segunda línea = account id)
+# 1. Obtener account ID (o usar en .env línea 2 = SOLO Account ID, no API Key ni token)
+#    Account ID = código corto en la URL del dashboard: dash.cloudflare.com/<account_id>/...
 $accountId = $null
 if (Test-Path $envPath) {
     $lines = Get-Content $envPath | Where-Object { $_.Trim() -ne "" }
-    if ($lines.Count -ge 2) { $accountId = $lines[1].Trim() }
+    if ($lines.Count -ge 2) {
+        $line2 = $lines[1].Trim()
+        # Account ID suele ser ~32 caracteres alfanuméricos; si la línea es muy larga es un token/key, no Account ID
+        if ($line2.Length -ge 20 -and $line2.Length -le 40 -and $line2 -match '^[a-zA-Z0-9]+$') {
+            $accountId = $line2
+        }
+        elseif ($line2.Length -gt 40) {
+            Write-Host "Aviso: La segunda línea de .env parece un token/API key, no un Account ID. Se intentará obtener el Account ID por API."
+            Write-Host "       Si falla, pon en la línea 2 solo tu Account ID (código corto de la URL del dashboard)."
+        }
+    }
 }
 if (-not $accountId) {
     Write-Host "Obteniendo cuenta de Cloudflare..."

@@ -37,7 +37,19 @@ Abre `index.html` en el navegador o usa un servidor local (por ejemplo Live Serv
 
 ## Estructura
 
-- `index.html` – Portada (hero, categorías, productos, contacto, footer)
+- `index.html` – Portada (hero, categorías, productos, marcas, footer)
 - `css/style.css` – Estilos y responsive
-- `js/main.js` – Formulario mailto y búsqueda
+- `js/main.js` – Carrusel de marcas, búsqueda
+- `images/logos/` – Carpeta para logos de marcas
 - `.env` – Token de Cloudflare (no se sube al repo)
+
+## Agregar logos de marcas
+
+1. Coloca los archivos de imagen en `images/logos/` (PNG con fondo transparente recomendado).
+2. Abre `js/main.js` y busca el array `brands` al inicio.
+3. Añade un objeto por cada logo:
+   ```javascript
+   { src: 'images/logos/tu-logo.png', alt: 'Nombre de la Marca' }
+   ```
+
+Ver `images/logos/README.md` para más detalles.
