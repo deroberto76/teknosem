@@ -4,20 +4,39 @@
   // Suavizado ya está en CSS (scroll-behavior: smooth)
   // Enlaces internos funcionan con #id
 
+  // Grid de productos destacados (desde productos-data.js)
+  var productosGrid = document.getElementById('productosGrid');
+  var productosData = window.PRODUCTOS_DATA;
+  if (productosGrid && productosData && productosData.length > 0) {
+    var cartSvg = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>';
+    productosData.slice(0, 4).forEach(function (p) {
+      var desc = Array.isArray(p.descripcion) ? p.descripcion[0] : (p.descripcion || '');
+      var card = document.createElement('article');
+      card.className = 'card-product';
+      card.innerHTML = '<div class="card-product-img"><img src="' + p.imagen + '" alt="' + (p.titulo || '') + '" loading="lazy" onerror="this.parentElement.textContent=\'IMG PRODUCTO\'"></div>' +
+        '<p class="card-product-sku">SKU: ' + (p.sku || '') + '</p>' +
+        '<h3 class="card-product-name">' + (p.titulo || '') + '</h3>' +
+        '<p class="card-product-desc">' + desc + '</p>' +
+        '<a href="producto.html?id=' + encodeURIComponent(p.id) + '" class="btn btn-outline-sm">' + cartSvg + ' Cotizar</a>';
+      productosGrid.appendChild(card);
+    });
+  }
+
   // Carrusel de marcas
   // ===== ARRAY DE LOGOS - AÑADE TUS LOGOS AQUÍ =====
   // Para agregar un logo, añade un objeto con:
   //   src: ruta a la imagen (ej: 'images/logos/mitsubishi.png')
   //   alt: texto alternativo (ej: 'Mitsubishi Electric')
   var brands = [
-    { src: 'images/logos/mitsubishi.png', alt: 'Mitsubishi Electric' },
-    { src: 'images/logos/geolux.png', alt: 'GEOLUX' },
-    { src: 'images/logos/cellpack.png', alt: 'CELLPACK' },
-    { src: 'images/logos/cabur.png', alt: 'cabur' },
-    { src: 'images/logos/electronicon.png', alt: 'ELECTRONICON' },
-    { src: 'images/logos/kps.png', alt: 'KPS' }
-    // Añade más logos aquí:
-    // { src: 'images/logos/otra-marca.png', alt: 'Otra Marca' },
+    { src: 'images/logos/ersa.jpg', alt: 'Ersa' },
+    { src: 'images/logos/Fluke.png', alt: 'Fluke' },
+    { src: 'images/logos/hioki.jpeg', alt: 'Hioki' },
+    { src: 'images/logos/bernstein.jpg', alt: 'Bernstein' },
+    { src: 'images/logos/mastech.jpg', alt: 'Mastech' },
+    { src: 'images/logos/pelican.png', alt: 'Pelican' },
+    { src: 'images/logos/pokai.png', alt: 'Pokai' },
+    { src: 'images/logos/wiha.png', alt: 'Wiha' },
+    { src: 'images/logos/monarch.jpg', alt: 'Monarch' }
   ];
   // ================================================
 

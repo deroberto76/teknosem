@@ -1,21 +1,21 @@
 /* ===== Variables y base ===== */
 :root {
-  --color-brand: #e6b800;
-  --color-brand-dark: #c49a00;
-  --color-brand-light: #f5d84d;
-  --color-dark: #1a1a2e;
-  --color-text: #333;
-  --color-text-muted: #666;
-  --color-bg: #fff;
-  --color-bg-alt: #f8f9fa;
-  --color-border: #e0e0e0;
-  --color-whatsapp: #25d366;
-  --radius: 8px;
-  --radius-lg: 12px;
-  --shadow: 0 2px 8px rgba(0,0,0,.08);
-  --shadow-hover: 0 4px 16px rgba(0,0,0,.12);
+  --color-brand: #ffcc00; /* More vibrant yellow */
+  --color-brand-dark: #cc9900;
+  --color-brand-light: #ffea00;
+  --color-dark: #0f172a; /* Darker, more modern navy */
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-whatsapp: #22c55e;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --container: min(1200px, 100% - 2rem);
+  --container: min(1200px, 100% - 3rem);
 }
 
 *,
@@ -321,15 +321,37 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.hero-visual::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, var(--color-brand-light) 0%, transparent 70%);
+  opacity: 0.15;
+  z-index: -1;
 }
 
 .hero-product-box {
   background: var(--color-bg);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
-  padding: 2.5rem;
+  box-shadow: var(--shadow-hover);
+  padding: 1.5rem;
   text-align: center;
-  min-width: 280px;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.hero-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
 }
 
 .hero-product-icon {
@@ -810,6 +832,126 @@ img {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+/* ===== Product Detail ===== */
+.product-detail {
+  padding: 2rem 0 4rem;
+}
+
+.product-loading {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 3rem;
+}
+
+.product-not-found {
+  text-align: center;
+  padding: 3rem;
+}
+
+.product-not-found h2 {
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.product-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.product-modelo {
+  margin: 0 0 0.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.product-titulo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.product-sku {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.product-body {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.product-imagen-wrap {
+  position: relative;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.product-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product-imagen-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.product-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-descripcion {
+  line-height: 1.7;
+}
+
+.product-descripcion p {
+  margin: 0 0 1rem;
+}
+
+.product-descripcion p:last-child {
+  margin-bottom: 0;
+}
+
+.product-fabricante {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .product-body {
+    grid-template-columns: 1fr;
   }
 }
 
