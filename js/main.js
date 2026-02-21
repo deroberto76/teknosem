@@ -95,4 +95,55 @@
       }
     });
   }
+  // Hero Slider
+  var slider = document.getElementById('heroSlider');
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.dot');
+  var prevSlide = document.getElementById('prevSlide');
+  var nextSlide = document.getElementById('nextSlide');
+
+  if (slider && slides.length > 0) {
+    var currentSlide = 0;
+    var slideInterval;
+
+    var showSlide = function (n) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = (n + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    };
+
+    var nextSlideFn = function () {
+      showSlide(currentSlide + 1);
+    };
+
+    var prevSlideFn = function () {
+      showSlide(currentSlide - 1);
+    };
+
+    if (nextSlide) nextSlide.addEventListener('click', function () {
+      nextSlideFn();
+      resetInterval();
+    });
+
+    if (prevSlide) prevSlide.addEventListener('click', function () {
+      prevSlideFn();
+      resetInterval();
+    });
+
+    dots.forEach(function (dot, index) {
+      dot.addEventListener('click', function () {
+        showSlide(index);
+        resetInterval();
+      });
+    });
+
+    var resetInterval = function () {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlideFn, 5000);
+    };
+
+    resetInterval();
+  }
 })();

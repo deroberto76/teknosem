@@ -80,24 +80,68 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1 class="hero-title">Precisión absoluta<br><span class="hero-title-light">para tu industria</span></h1>
-          <p class="hero-desc">Soluciones integrales en medición, inspección y control de calidad. Tecnología de
-            vanguardia para resultados confiables.</p>
-          <a href="#catalogo" class="btn btn-primary">Ver Catálogo Completo <span class="arrow">→</span></a>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-product-box">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=2070"
-              alt="Instrumentos Industriales Teknosem" class="hero-img">
-            <div class="hero-product-info">
-              <p class="hero-product-name">TECNOLOGÍA DE VANGUARDIA</p>
-              <p class="hero-product-model">Precisión en cada medida</p>
+    <section class="hero-slider">
+      <div class="slider-container" id="heroSlider">
+        <!-- Slide 1 -->
+        <div class="hero-slide active">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=2070"
+            alt="Medición Industrial" class="slide-bg">
+          <div class="slide-content">
+            <div class="container slide-inner">
+              <h2 class="slide-title">Precisión absoluta<br><span class="slide-title-light">para tu industria</span>
+              </h2>
+              <p class="slide-desc">Soluciones integrales en medición, inspección y control de calidad. Tecnología de
+                vanguardia para resultados confiables.</p>
+              <a href="#catalogo" class="btn btn-primary">Ver Catálogo Completo</a>
             </div>
           </div>
         </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2070"
+            alt="Control de Calidad" class="slide-bg">
+          <div class="slide-content">
+            <div class="container slide-inner">
+              <h2 class="slide-title">Innovación en<br><span class="slide-title-light">Control de Procesos</span></h2>
+              <p class="slide-desc">Optimizamos tu producción con sistemas de monitoreo avanzados y equipos de última
+                generación.</p>
+              <a href="#categorias" class="btn btn-primary">Explorar Soluciones</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide">
+          <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?auto=format&fit=crop&q=80&w=2070"
+            alt="Soporte Técnico" class="slide-bg">
+          <div class="slide-content">
+            <div class="container slide-inner">
+              <h2 class="slide-title">Respaldo Técnico<br><span class="slide-title-light">y Calibración
+                  Especializada</span></h2>
+              <p class="slide-desc">Más que equipos, entregamos confianza. Soporte técnico preventivo y correctivo para
+                mantener tu planta operativa.</p>
+              <a href="#nosotros" class="btn btn-primary">Conócenos Más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <div class="slider-controls">
+        <button class="slider-arrow prev" id="prevSlide" aria-label="Anterior">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <div class="slider-dots" id="sliderDots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <button class="slider-arrow next" id="nextSlide" aria-label="Siguiente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
       </div>
     </section>
 
