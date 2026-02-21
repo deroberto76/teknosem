@@ -139,14 +139,27 @@ img {
   flex-wrap: wrap;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.02em;
-  color: var(--color-dark);
-  padding: 0.4rem 0.6rem;
-  border: 2px solid var(--color-dark);
-  border-radius: var(--radius);
+.logo-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.footer-logo-wrap {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  /* Makes the logo white for the dark footer */
 }
 
 .logo:hover {
