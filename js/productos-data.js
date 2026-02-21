@@ -6,19 +6,18 @@
  */
 window.PRODUCTOS_DATA = [
   {
-    id: 'medidor-pinza-203',
-    modelo: '203 SERIES X03',
-    titulo: 'Medidor de Pinza Modelo 203',
-    sku: '1489',
-    imagen: 'images/productos/medidor-pinza-203.jpg',
-    pdfUrl: 'docs/medidor-pinza-203.pdf',
+    id: 'osciloscopio-digital-premium',
+    modelo: 'DSO-X 3000 SERIES',
+    titulo: 'Osciloscopio Digital de Alta Resonancia',
+    sku: 'TEK-DSO3000',
+    imagen: 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&q=80&w=1000',
+    pdfUrl: 'docs/osciloscopio-dso3000.pdf',
     descripcion: [
-      'La pinza amperimétrica de verdadero valor eficaz modelo 203 tiene una clasificación de seguridad de 600 V CAT IV. Mide voltios y amperios CA CC, frecuencia, continuidad, resistencia y temperatura (con la sonda termopar K suministrada).',
-      'El modelo 203 también puede realizar comprobaciones de diodos. Su modo Adaptador muestra entradas de sensor externo. La función relativa delta compara las nuevas mediciones con un valor de referencia, y la función MIN / MAX rastrea los valores altos y bajos.',
-      'Este medidor compacto y resistente puede funcionar en los entornos de trabajo más exigentes, y su clasificación IP40 le permite soportar tanto el polvo como el agua.',
-      'Además, las series x03 (modelos 203-403-603) alcanzan rangos de corriente alterna de (600A-1000A-2000A). Y para corriente continua (900A-1500A-3000A) respectivamente.'
+      'El osciloscopio profesional de la serie DSO-X ofrece una claridad de señal excepcional y una tasa de actualización líder en la industria. Diseñado para diagnósticos complejos en electrónica industrial y sistemas de control.',
+      'Cuenta con una pantalla táctil capacitiva de 10 pulgadas, análisis de espectro integrado y decodificación de protocolos seriales. Su arquitectura de hardware permite capturar anomalías intermitentes con una precisión sin precedentes.',
+      'Ideal para ingenieros de desarrollo, laboratorios de certificación y mantenimiento preventivo avanzado en plantas industriales automatizadas.'
     ],
-    fabricante: 'AEMC'
+    fabricante: 'TEKNOSEM PRO'
   },
   {
     id: 'calibrador-digital-ip67',
