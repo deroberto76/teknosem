@@ -306,7 +306,7 @@ img {
 /* ===== Hero Slider ===== */
 .hero-slider {
   position: relative;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
   background: var(--color-dark);
 }
