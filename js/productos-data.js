@@ -8,16 +8,16 @@ window.PRODUCTOS_DATA = [
   {
     id: 'osciloscopio-digital-premium',
     modelo: 'DSO-X 3000 SERIES',
-    titulo: 'Osciloscopio Digital de Alta Resonancia',
+    titulo: 'Pinzas amperimétricas inalámbricas',
     sku: 'TEK-DSO3000',
-    imagen: 'https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?auto=format&fit=crop&q=80&w=1000',
+    imagen: 'https://dedeportes.cl/wp-content/uploads/2026/02/producto-uno-scaled.jpg',
     pdfUrl: 'docs/osciloscopio-dso3000.pdf',
     descripcion: [
-      'El osciloscopio profesional de la serie DSO-X ofrece una claridad de señal excepcional y una tasa de actualización líder en la industria. Diseñado para diagnósticos complejos en electrónica industrial y sistemas de control.',
-      'Cuenta con una pantalla táctil capacitiva de 10 pulgadas, análisis de espectro integrado y decodificación de protocolos seriales. Su arquitectura de hardware permite capturar anomalías intermitentes con una precisión sin precedentes.',
-      'Ideal para ingenieros de desarrollo, laboratorios de certificación y mantenimiento preventivo avanzado en plantas industriales automatizadas.'
+      'La nueva serie 370 FC de Fluke ofrece un rendimiento avanzado para la solución de problemas.',
+      'La sonda de Corriente flexible iFlex permite que las conexiones de los cables sean más sencillas en espacios reducidos.',
+      'Además las tres pinzas ahora forman parte de una familia de herramientas de prueba inalámbricas de Fluke Connet.'
     ],
-    fabricante: 'TEKNOSEM PRO'
+    fabricante: 'Fluke Corporation'
   },
   {
     id: 'calibrador-digital-ip67',

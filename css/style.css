@@ -1,9 +1,9 @@
 /* ===== Variables y base ===== */
 :root {
-  --color-brand: #ffcc00;
-  /* More vibrant yellow */
-  --color-brand-dark: #cc9900;
-  --color-brand-light: #ffea00;
+  --color-brand: #00AEEF;
+  /* Teknosem Celeste */
+  --color-brand-dark: #0096ce;
+  --color-brand-light: #4bd2ff;
   --color-dark: #0f172a;
   /* Darker, more modern navy */
   --color-text: #1e293b;
