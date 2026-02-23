@@ -442,8 +442,8 @@ img {
 }
 
 .slider-arrow {
-  background: rgba(15, 23, 42, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: white;
   width: 54px;
   height: 54px;
@@ -453,7 +453,7 @@ img {
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   pointer-events: auto;
 }
 
@@ -520,7 +520,8 @@ img {
   .slider-arrow {
     width: 44px;
     height: 44px;
-    background: rgba(15, 23, 42, 0.6);
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
   }
 
   .slider-dots {
@@ -827,14 +828,14 @@ img {
   height: 44px;
   border-radius: 50%;
   border: 1px solid var(--color-border);
-  background: var(--color-bg);
-  color: var(--color-text-muted);
+  background: transparent;
+  color: var(--color-brand-dark);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all .2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(2px);
 }
 
 .brands-arrow-prev {
