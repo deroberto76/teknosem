@@ -11,7 +11,7 @@ window.PRODUCTOS_DATA = [
     titulo: 'Pinzas amperimétricas inalámbricas',
     sku: 'TEK-DSO3000',
     imagen: 'https://dedeportes.cl/wp-content/uploads/2026/02/producto-uno-scaled.jpg',
-    pdfUrl: 'docs/osciloscopio-dso3000.pdf',
+    pdfUrl: 'https://dedeportes.cl/wp-content/uploads/2026/02/Fluke-87V-MAX.pdf',
     descripcion: [
       'La nueva serie 370 FC de Fluke ofrece un rendimiento avanzado para la solución de problemas.',
       'La sonda de Corriente flexible iFlex permite que las conexiones de los cables sean más sencillas en espacios reducidos.',
