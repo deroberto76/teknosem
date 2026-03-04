@@ -32,7 +32,6 @@
     { src: 'images/logos/Fluke.png', alt: 'Fluke' },
     { src: 'images/logos/hioki.jpeg', alt: 'Hioki' },
     { src: 'images/logos/bernstein.jpg', alt: 'Bernstein' },
-    { src: 'images/logos/mastech.jpg', alt: 'Mastech' },
     { src: 'images/logos/pelican.png', alt: 'Pelican' },
     { src: 'images/logos/pokai.png', alt: 'Pokai' },
     { src: 'images/logos/wiha.png', alt: 'Wiha' },
@@ -41,11 +40,9 @@
   // ================================================
 
   var carousel = document.getElementById('brandsCarousel');
-  var prevBtn = document.querySelector('.brands-arrow-prev');
-  var nextBtn = document.querySelector('.brands-arrow-next');
 
   if (carousel && brands.length > 0) {
-    // Insertar logos en el carrusel
+    // Insertar logos
     brands.forEach(function (brand) {
       var logoDiv = document.createElement('div');
       logoDiv.className = 'brand-logo';
@@ -56,29 +53,6 @@
       logoDiv.appendChild(img);
       carousel.appendChild(logoDiv);
     });
-
-    // Funcionalidad de navegación
-    var scrollAmount = 300;
-    var updateArrows = function () {
-      var canScrollLeft = carousel.scrollLeft > 0;
-      var canScrollRight = carousel.scrollLeft < (carousel.scrollWidth - carousel.clientWidth - 10);
-      if (prevBtn) prevBtn.disabled = !canScrollLeft;
-      if (nextBtn) nextBtn.disabled = !canScrollRight;
-    };
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', function () {
-        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-      });
-    }
-    if (nextBtn) {
-      nextBtn.addEventListener('click', function () {
-        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-      });
-    }
-
-    carousel.addEventListener('scroll', updateArrows);
-    updateArrows(); // Estado inicial
   }
 
   // Búsqueda: solo diseño; se puede añadir filtrado después
