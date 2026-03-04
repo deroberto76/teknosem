@@ -165,8 +165,7 @@ img {
 }
 
 .logo-img {
-  height: 65px;
-  /* Ajustado para que sea superior a la caja de búsqueda */
+  height: 165px;
   width: auto;
   display: block;
 }
