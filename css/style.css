@@ -179,8 +179,8 @@ img {
 .footer-logo-img {
   height: 60px;
   width: auto;
-  /* El filtro ya no aplica a PNG si no es monocromático, 
-     pero lo mantenemos si el logo es oscuro sobre fondo oscuro o lo ajustamos */
+  filter: brightness(0) invert(1);
+  /* Makes the logo white for the dark footer */
 }
 
 .logo:hover {
