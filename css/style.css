@@ -165,7 +165,8 @@ img {
 }
 
 .logo-img {
-  height: 48px;
+  height: 60px;
+  /* Incrementado para el nuevo logo PNG */
   width: auto;
   display: block;
 }
@@ -178,8 +179,8 @@ img {
 .footer-logo-img {
   height: 60px;
   width: auto;
-  filter: brightness(0) invert(1);
-  /* Makes the logo white for the dark footer */
+  /* El filtro ya no aplica a PNG si no es monocromático, 
+     pero lo mantenemos si el logo es oscuro sobre fondo oscuro o lo ajustamos */
 }
 
 .logo:hover {

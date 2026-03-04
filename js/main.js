@@ -28,14 +28,14 @@
   //   src: ruta a la imagen (ej: 'images/logos/mitsubishi.png')
   //   alt: texto alternativo (ej: 'Mitsubishi Electric')
   var brands = [
-    { src: 'images/logos/ersa.jpg', alt: 'Ersa' },
     { src: 'images/logos/Fluke.png', alt: 'Fluke' },
     { src: 'images/logos/hioki.jpeg', alt: 'Hioki' },
-    { src: 'images/logos/bernstein.jpg', alt: 'Bernstein' },
-    { src: 'images/logos/pelican.png', alt: 'Pelican' },
+    { src: 'images/logos/monarch.jpg', alt: 'Monarch' },
     { src: 'images/logos/pokai.png', alt: 'Pokai' },
+    { src: 'images/logos/ersa.jpg', alt: 'Ersa' },
     { src: 'images/logos/wiha.png', alt: 'Wiha' },
-    { src: 'images/logos/monarch.jpg', alt: 'Monarch' }
+    { src: 'images/logos/bernstein.jpg', alt: 'Bernstein' },
+    { src: 'images/logos/pelican.png', alt: 'Pelican' } 
   ];
   // ================================================
 
